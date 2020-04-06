@@ -32,7 +32,7 @@ public class RecursiveTest {
     @Test
     @DisplayName("WHen single letter word is recieved then 1 is returned")
     void singleLetter(){
-        assertThat(recusive.length(1)).isEqualTo(1);
+        assertThat(recusive.length("a")).isEqualTo(1);
     }
 
 
