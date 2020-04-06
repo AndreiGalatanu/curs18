@@ -24,6 +24,16 @@ public class RecursiveTest {
         Assertions.assertThat(exception.getMessage()).isEqualTo("word cannot be null");
 
     }
+    @Test
+    @DisplayName("WHEN empty string is recivied then 0 is returned")
+    void emptyString(){
+        Assertions.assertThat(recusive.length("")).isEqualTo(0);
+    }
+    @Test
+    @DisplayName("WHen single letter word is recieved then 1 is returned")
+    void singleLetter(){
+        assertThat(recusive.length(1)).isEqualTo(1);
+    }
 
 
 }
