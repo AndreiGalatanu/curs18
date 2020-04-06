@@ -6,6 +6,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import ro.fasttrackit.mvnbase.Recursive;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 public class RecursiveTest {
 
     Recursive recusive;
@@ -18,7 +20,10 @@ public class RecursiveTest {
     @Test
     @DisplayName("If null Then throw exception exception ")
     void ifNullThenException() {
-        Assertions.assertThat(IllegalArgumentException.class, () -> recusive.lenght(null));
+        var exception = org.junit.jupiter.api.Assertions.assertThrows(IllegalArgumentException.class, ()->recusive.length(null));
+        Assertions.assertThat(exception.getMessage()).isEqualTo("word cannot be null");
 
     }
+
+
 }
