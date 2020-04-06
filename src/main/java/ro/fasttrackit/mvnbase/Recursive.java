@@ -9,10 +9,17 @@ public class Recursive {
         if (word.isEmpty()) {
             return 0;
         } else {
-            return 1+length(word.substring(1));
+            return 1 + length(word.substring(1));
 
         }
 
 
+    }
+
+    public char upperCase(String word) {
+        if (Character.isUpperCase(word.charAt(0))) {
+            return word.charAt(0);
+        }
+return 0;
     }
 }

@@ -41,4 +41,14 @@ public class RecursiveTest {
         Assertions.assertThat(recusive.length("dasdasfasd")).isEqualTo(10);
     }
 
+    @Test
+    @DisplayName("WHEN first char is uppercase THEN the retrun first char")
+    void firstUppercase(){
+        Assertions.assertThat(recusive.upperCase("Mac")).isEqualTo("s");
+
+
+
+    }
+
+
 }
