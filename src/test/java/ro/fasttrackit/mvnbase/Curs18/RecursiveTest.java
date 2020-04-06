@@ -38,7 +38,7 @@ public class RecursiveTest {
     @Test
     @DisplayName("wHEN LONGER word is received then its length is returned ")
     void longWord(){
-        Assertions.assertThat(recusive.length("dasdasfasd")).isEqualTo(2);
+        Assertions.assertThat(recusive.length("dasdasfasd")).isEqualTo(10);
     }
 
 }
